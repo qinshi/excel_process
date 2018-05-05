@@ -8,7 +8,9 @@ def get_names():
 
 
 file_names = get_names()
+target_col = '原始'
+
 for file_name in file_names:
-    ExcelProcessor.do_process(file_name)
+    ExcelProcessor.do_process(file_name, target_col)
 
 
